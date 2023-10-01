@@ -76127,6 +76127,7 @@
 	pixel_y = 12;
 	pixel_x = -3
 	},
+/obj/item/device/tagger/shop,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -91084,10 +91085,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/machinery/alarm{
-	pixel_x = -28;
-	pixel_y = -6
-	},
 /turf/simulated/floor{
 	icon_state = "whitepurple"
 	},
@@ -94341,6 +94338,33 @@
 	icon_state = "freezerfloor2"
 	},
 /area/station/medical/patients_rooms)
+"smE" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay Storage";
+	req_access = list(70);
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "Biohazard";
+	name = "Biohazard Shutter";
+	opacity = 0
+	},
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "Biohazard_Med";
+	name = "Biohazard Shutter";
+	opacity = 0
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/station/medical/storage)
 "smG" = (
 /obj/machinery/door/firedoor,
 /obj/structure/window/fulltile/reinforced{
@@ -101927,11 +101951,10 @@
 /area/station/medical/storage)
 "tJG" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
 /obj/machinery/door/window/eastright{
 	dir = 8;
 	layer = 2.9;
-	name = "Chemistry Desk";
+	name = "Medbay Desk";
 	req_access = list(5)
 	},
 /obj/machinery/door/window/southright{
@@ -101952,6 +101975,9 @@
 	id = "Biohazard_Med";
 	name = "Biohazard Shutter";
 	opacity = 0
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/medical/storage)
@@ -105577,8 +105603,12 @@
 "usE" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/machinery/alarm{
+	pixel_x = -28;
+	pixel_y = -6
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -163000,7 +163030,7 @@ epE
 lMn
 xLZ
 tJG
-uJF
+smE
 uJF
 cHO
 adj
