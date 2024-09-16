@@ -11483,7 +11483,7 @@
 	},
 /area/station/civilian/bar)
 "bDS" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
 /turf/simulated/floor/grid_floor,
@@ -15332,7 +15332,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible,
+/obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/plating,
 /area/station/maintenance/science)
 "crr" = (
@@ -15831,7 +15831,7 @@
 	name = "Engineering External Access";
 	req_access = list(13)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/grid_floor,
@@ -18010,13 +18010,13 @@
 	name = "RnD External Access";
 	req_one_access = list(13,47,1)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
 	},
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/science)
@@ -26100,7 +26100,7 @@
 /turf/simulated/floor/wood,
 /area/station/maintenance/bridge)
 "euL" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
 	},
 /turf/simulated/floor/grid_floor,
@@ -29005,7 +29005,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible,
+/obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/science)
 "eYW" = (
@@ -37157,7 +37157,7 @@
 /turf/simulated/floor,
 /area/station/maintenance/science)
 "gAc" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
 /turf/simulated/floor/grid_floor,
@@ -37844,7 +37844,6 @@
 /turf/simulated/wall/r_wall,
 /area/station/maintenance/disposal)
 "gHg" = (
-/obj/machinery/atmospherics/pipe/simple/visible,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -37858,6 +37857,7 @@
 	req_access = list(67)
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/dormitory)
 "gHl" = (
@@ -38941,7 +38941,7 @@
 	},
 /area/station/hallway/secondary/exit)
 "gQb" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
 /turf/simulated/floor/grid_floor,
@@ -44350,7 +44350,7 @@
 /obj/structure/closet/emergency_wall{
 	pixel_x = -28
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
 /turf/simulated/floor/grid_floor,
@@ -44706,7 +44706,7 @@
 	tag_exterior_door = "outter_lab_north_outer";
 	tag_interior_door = "outter_lab_north_inner"
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
 /turf/simulated/floor/grid_floor,
@@ -44962,7 +44962,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/brigright)
 "icI" = (
-/obj/machinery/atmospherics/pipe/manifold/visible,
+/obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/dormitory)
 "icM" = (
@@ -45367,7 +45367,8 @@
 "igA" = (
 /obj/machinery/power/solar_control{
 	id = "starboardsolar";
-	name = "Aft Starboard Solar Control"
+	name = "Aft Starboard Solar Control";
+	dir = 4
 	},
 /obj/structure/cable{
 	d2 = 4;
@@ -47481,6 +47482,14 @@
 "ize" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 1
+	},
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1379;
+	master_tag = "engatm_airlock";
+	name = "interior access button";
+	pixel_y = 20;
+	req_one_access = list(13,45,1)
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
@@ -49881,7 +49890,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/grid_floor,
@@ -51128,7 +51137,7 @@
 	req_access = list(13);
 	req_one_access = list(13,45,1)
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
 /turf/simulated/floor/grid_floor,
@@ -52255,10 +52264,10 @@
 	name = "Engineering External Access";
 	req_access = list(13)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/grid_floor,
 /area/station/maintenance/portsolar)
 "jxi" = (
 /obj/structure/cable{
@@ -62652,15 +62661,15 @@
 	icon_state = "engineering_door"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
 /obj/machinery/door/airlock/external{
 	dir = 4;
 	frequency = 1379;
 	id_tag = "outter_lab_north_inner";
 	locked = null;
 	name = "External Access"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
 	},
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/outerlabs)
@@ -67155,7 +67164,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
 /turf/simulated/floor/grid_floor,
@@ -72828,13 +72837,13 @@
 	},
 /area/station/security/lobby)
 "nCr" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 5
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/science)
@@ -74697,7 +74706,7 @@
 	name = "Engineering External Access";
 	req_access = list(13)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/starboardsolar)
 "nUt" = (
@@ -76855,7 +76864,7 @@
 	req_access = list(13);
 	req_one_access = list(11,24)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/hallway/primary/bridgehall)
 "oqi" = (
@@ -80375,7 +80384,6 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = -32
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
 	id_tag = "virology_inner";
@@ -80383,6 +80391,7 @@
 	name = "Engineering External Access";
 	req_one_access = list(13,45,1)
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/medbay)
 "oZE" = (
@@ -82185,7 +82194,7 @@
 	name = "Atmos External Access";
 	req_one_access = list(13,45,1)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/grid_floor,
@@ -84808,14 +84817,14 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 9
-	},
 /obj/structure/sign/warning/airlock{
 	pixel_x = 32
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 2
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9
 	},
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/dormitory)
@@ -94990,7 +94999,7 @@
 	name = "Engineering External Access";
 	req_one_access = list(13,45,1)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/dormitory)
 "rVx" = (
@@ -99981,7 +99990,7 @@
 	pixel_x = -10;
 	pixel_y = 25
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
 /turf/simulated/floor/grid_floor,
@@ -109894,11 +109903,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 2
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 4
 	},
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/dormitory)
@@ -111300,7 +111309,7 @@
 	id_tag = "robotics_solar_pump";
 	name = "Solar Robotics Large Air Vent"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/grid_floor,
 /area/station/maintenance/portsolar)
 "uYM" = (
 /obj/structure/cable{
@@ -112203,7 +112212,7 @@
 	name = "Engineering External Access";
 	req_access = list(10,13)
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/grid_floor,
 /area/station/maintenance/portsolar)
 "vkm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -113598,7 +113607,7 @@
 	name = "Engineering External Access";
 	req_access = list(13)
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/grid_floor,
 /area/station/maintenance/auxsolarstarboard)
 "vAY" = (
@@ -126241,7 +126250,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
 /turf/simulated/floor/grid_floor,
@@ -126394,7 +126403,7 @@
 	pixel_x = 25;
 	pixel_y = -9
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/grid_floor,
