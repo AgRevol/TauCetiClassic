@@ -123791,11 +123791,6 @@
 	icon_state = "gr_window_polarized";
 	id = "Botanic"
 	},
-/obj/structure/window/fulltile/polarized{
-	grilled = 1;
-	icon_state = "gr_window_polarized";
-	id = "Botanic"
-	},
 /obj/machinery/door/firedoor{
 	dir = 4
 	},
